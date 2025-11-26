@@ -1,19 +1,13 @@
-#include "calculator.h"
-#include "dartStrategy.h"
+#include "scene.h"
 
 int main() {
 
-    calculator calculator;
-    dartStrategy dartStrategy;
-    
-    int pointsLeft;
-    int scoredPoints;
-    
-    scoredPoints = calculator.additions();
-    pointsLeft = dartStrategy.one - scoredPoints;
+    scene* newScene = new scene();
 
-    std::cout << "points scored " << scoredPoints << std::endl;
-    std::cout << "points left " << pointsLeft << std::endl;
+    newScene->update();
+
+    //delete memory
+    delete newScene; 
 
     return 0;
 }
