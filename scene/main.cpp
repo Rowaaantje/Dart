@@ -1,14 +1,19 @@
 #include "calculator.h"
+#include "dartStrategy.h"
 
 int main() {
 
     calculator calculator;
-
-    int numResult;
-
-    numResult = calculator.additions();
+    dartStrategy dartStrategy;
     
-    std::cout << numResult << std::endl;
+    int pointsLeft;
+    int scoredPoints;
+    
+    scoredPoints = calculator.additions();
+    pointsLeft = dartStrategy.one - scoredPoints;
+
+    std::cout << "points scored " << scoredPoints << std::endl;
+    std::cout << "points left " << pointsLeft << std::endl;
 
     return 0;
 }

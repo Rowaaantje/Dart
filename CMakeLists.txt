@@ -7,4 +7,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(dart 
     scene/main.cpp
-    scene/calculator.cpp)
+    scene/calculator.cpp
+    scene/dartStrategy.cpp)
