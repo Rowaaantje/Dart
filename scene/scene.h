@@ -1,5 +1,5 @@
+#include "dartOptions.h"
 #include "calculator.h"
-#include "dartStrategy.h"
 
 class scene
 {
@@ -10,7 +10,7 @@ public:
     void update();
 
 private:
-    calculator calculator;
-    dartStrategy dartStrategy;
+    dartOptions* options;
+    calculator* calc;
 };
 

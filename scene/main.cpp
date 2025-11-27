@@ -1,7 +1,7 @@
 #include "scene.h"
 
 int main() {
-
+    
     scene* newScene = new scene();
 
     newScene->update();
