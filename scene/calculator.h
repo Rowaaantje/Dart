@@ -7,6 +7,7 @@ public:
     ~calculator();
 
     int additions();
+    bool pointsLeft(int pointsleft);
 
 private:
 };

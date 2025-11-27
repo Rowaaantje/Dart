@@ -29,7 +29,7 @@ void scene::update() {
         std::cout << "points scored " << scoredPoints << std::endl;
         std::cout << "points left " << pointsLeft << std::endl;
 
-        if (pointsLeft == 0) {
+        if (calc->pointsLeft(pointsLeft)) {
             break;
         }
     }
